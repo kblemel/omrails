@@ -1,0 +1,29 @@
+$btnPrimaryBackground: green;
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+$baseFontFamily: 'Open Sans';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@import 'bootstrap';
+
+body {
+	padding-top: 45px;
+}
+
+@import 'bootstrap-responsive';
+
+/* This is screwing around a bit with the Bootstrap innards that Mattan figured out in order to lose the shadow*/
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+.footer {
+
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
