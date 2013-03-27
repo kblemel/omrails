@@ -1,21 +1,21 @@
 <% if user_signed_in? %>
 	<div class="hero-unit">
-		<h1>You&rsquo;re logged in at One Month Rails</h1>
+		<h2>You&rsquo;re logged in at Optical Arrest</h2>
 		<p>
-			You&rsquo;re already where you want to be, so there&rsquo;s no reason to go anywhere else. If you insist on trying, go ahead and 
-			<%= link_to "get nowhere fast", '#' %>.
+			You&rsquo;re already where you want to be, so there&rsquo;s no reason to go anywhere else. <br>If you insist on trying, go ahead and 
+			<%= link_to "get nowhere fast", 'http://vimeo.com/51968618' %>.
 		</p>
 		<p>
-			<%= link_to "Click if you’re awesome!", '#', class: "btn btn-primary btn-large" %>
+			<%= link_to "Click if you’re guillible!", '#', class: "btn btn-primary btn-large" %>
 		</p>
 	</div>
 <% else %>	
 	<div class="hero-unit">
-		<h1>Welcome to One Month Rails</h1>
+		<h1>Welcome to Optical Arrest</h1>
 		<p>
-			You&rsquo;ve found the homepage for the 
+			You&rsquo;ve found the homepage for Optical Arrest, created during the 
 			<%= link_to "One Month Rails", "http://onemonthrails.com"%>
-			application.
+			course.
 		</p>
 		<p>
 			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
