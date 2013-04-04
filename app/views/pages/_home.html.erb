@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+	<p style="font-size:20px">Welcome back, old pal. Admire your work.</p><br><br>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to Optical Arrest</h1>
+		<p>
+			You&rsquo;ve found the homepage for Optical Arrest, created during the 
+			<%= link_to "One Month Rails", "http://onemonthrails.com"%>
+			course.
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
